@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VIP Test Drive - HyperDrive Showroom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="showroom-nav">
+    <div class="brand-logo">HYPER<span>DRIVE</span></div>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="history.html">History</a>
+      <a href="bugatti.html">Bugatti</a>
+      <a href="ferrari.html">Ferrari</a>
+      <a href="bmw.html">BMW M</a>
+      <a href="engineering.html">Engineering</a>
+      <a href="specs.html">Specs</a>
+      <a href="testdrive.html">Test Drive</a>
+    </div>
+  </div>
+
+  <div class="hero-poster poster-testdrive">
+    <div class="hero-overlay-text">
+      <span class="hero-kicker">Track Experience</span>
+      <h1>Book a Private Circuit Test Drive</h1>
+    </div>
+  </div>
+
+  <div class="showroom-deck">
+    <div class="telemetry-bar">
+      <div class="tele-item">
+        <strong>PRIVATE TRACK</strong>
+        <span>Guided Instructor Laps</span>
+      </div>
+      <div class="tele-item">
+        <strong>TELEMETRY</strong>
+        <span>Full Lap Data Printout</span>
+      </div>
+      <div class="tele-item">
+        <strong>VIP LOUNGE</strong>
+        <span>Showroom Consultation</span>
+      </div>
+    </div>
+
+    <div class="content-panel">
+      <h2>Schedule Your Track Session</h2>
+      <p>Select your preferred performance division and share your contact details to request a private showroom viewing or circuit test drive.</p>
+
+      <form action="#" method="post">
+        <label for="drivername">Driver Full Name:</label>
+        <input type="text" id="drivername" name="drivername" placeholder="Enter your full name" required>
+
+        <label for="division">Preferred Brand Division:</label>
+        <select id="division" name="division">
+          <option value="bmw">BMW M Motorsport (M4 CSL / M5)</option>
+          <option value="bugatti">Bugatti Molsheim Hypercars</option>
+          <option value="ferrari">Ferrari Maranello Racing Division</option>
+          <option value="koenigsegg">Koenigsegg Megacar Showcase</option>
+        </select>
+
+        <label for="notes">Preferred Date &amp; Track Experience Notes:</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Mention your preferred circuit date, driving experience, or specific model request..."></textarea>
+
+        <button type="submit">Request VIP Track Pass</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    HyperDrive Digital Showroom &bull; Class 10 Computer Practical Project
+  </footer>
+
+</body>
+</html>

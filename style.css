@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  line-height: 1.7;
+}
+
+/* Floating Glass Top Navigation */
+.showroom-nav {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
+  max-width: 1120px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 14px 28px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.12);
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.brand-logo {
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #0f172a;
+  text-transform: uppercase;
+}
+
+.brand-logo span {
+  color: #2563eb;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 16px;
+  transition: color 0.2s;
+}
+
+.nav-items a:hover {
+  color: #2563eb;
+}
+
+/* Full-Viewport Hero Poster Showcase */
+.hero-poster {
+  height: 78vh;
+  min-height: 480px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 6%;
+}
+
+/* Subtle bottom gradient only so white hero title is razor-sharp */
+.hero-poster::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.05) 55%);
+}
+
+.hero-overlay-text {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  max-width: 700px;
+}
+
+.hero-kicker {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.hero-overlay-text h1 {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+/* Individual Page Car Posters */
+.poster-home { background-image: url('bg-home.jpg'); }
+.poster-history { background-image: url('bg-history.jpg'); }
+.poster-bugatti { background-image: url('bg-bugatti.jpg'); }
+.poster-ferrari { background-image: url('bg-ferrari.jpg'); }
+.poster-bmw { background-image: url('bg-bmw.jpg'); }
+.poster-engineering { background-image: url('bg-engineering.jpg'); }
+.poster-specs { background-image: url('bg-specs.jpg'); }
+.poster-testdrive { background-image: url('bg-testdrive.jpg'); }
+
+/* Showroom Content Deck */
+.showroom-deck {
+  max-width: 1100px;
+  margin: -35px auto 50px auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5;
+}
+
+/* Floating Telemetry Bar */
+.telemetry-bar {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 22px 30px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tele-item strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 900;
+  color: #2563eb;
+}
+
+.tele-item span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #64748b;
+  font-weight: 700;
+}
+
+/* Main White Architectural Card */
+.content-panel {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.content-panel h2 {
+  font-size: 24px;
+  color: #0f172a;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.content-panel p {
+  color: #334155;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+ul, ol {
+  margin: 14px 0 18px 24px;
+  color: #334155;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Sleek Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #f8fafc;
+  color: #2563eb;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Form Elements */
+label {
+  display: block;
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #0f172a;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+}
+
+button {
+  margin-top: 24px;
+  padding: 14px 30px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+  font-size: 13px;
+}
